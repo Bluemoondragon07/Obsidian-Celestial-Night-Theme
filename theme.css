@@ -357,6 +357,29 @@ img {
     border-radius: var(--radius-s);
 }
 
+/* === divider (horizontal rule) === */
+ hr::before {
+    font-size: 1.5em;
+    content: "⋆⁺★₊⋆₊✦₊⋆★₊⁺⋆";
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: 50% 50%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    color: white;
+    background-color: var(--background-primary);
+    z-index: 1;
+    text-shadow: var(--glow-effect-s);
+    visibility: visible;
+}
+hr {
+    margin: 2.5em 0 !important;
+    visibility: hidden;
+}
+
+
 /* @settings
 
 name: Celestial Night
